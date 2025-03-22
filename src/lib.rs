@@ -1,5 +1,5 @@
 use napi_derive::napi;
-use std::fmt::Display;
+use napi::bindgen_prelude::*;
 
 #[napi]
 fn escape_html(string: String) -> String {
@@ -45,8 +45,7 @@ fn escape_html(string: String) -> String {
  * @param text Text value to escape.
  * @return An escaped string.
  */
-#[napi]
-fn escape_text_for_browser<T: Display>(text: T) -> String {
-  let text_str = text.to_string();
-  escape_html(text_str)
+#[napi(js_name = "escapeTextForBrowser")]
+fn escape_text_for_browser(text: String) -> String {
+  escape_html(text)
 }
