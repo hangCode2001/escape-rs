@@ -1,0 +1,19 @@
+{
+  "name": "escape-rs",
+  "version": "0.1.0",
+  "description": "Rust implementation of escapeTextForBrowser",
+  "main": "index.js",
+  "scripts": {
+    "build": "napi build --release",
+    "build:debug": "napi build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "napi-rs",
+    "escape-html"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.16.3"
+  }
+}
