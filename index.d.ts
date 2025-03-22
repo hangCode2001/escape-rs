@@ -10,4 +10,4 @@ export declare function escapeHtml(string: string): string
  * @param text Text value to escape.
  * @return An escaped string.
 */
-export declare function escapeTextForBrowser(text: string): string
+export declare function escapeTextForBrowser(text: string | number | boolean): string

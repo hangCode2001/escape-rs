@@ -46,6 +46,7 @@ dependencies = [
 name = "escape-rs"
 version = "0.1.0"
 dependencies = [
+ "memchr",
  "napi",
  "napi-build",
  "napi-derive",
